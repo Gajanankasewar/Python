@@ -60,6 +60,8 @@ if len(password)>=8:
 
 a=int(input("Enter any number"))
 if(a<0):
+    print("Positive Number")
+else:
     print("Negative Number")
 
 
@@ -307,7 +309,7 @@ else:
 
 ## Nested If ###
 
-1)positive/Negative  even/odd
+#1)positive/Negative  even/odd
 num=int(input("Enter any Number: "))
 if(num>=0):
     print("Positive Number")
@@ -325,7 +327,7 @@ else:
     print("zero")
 
       
-2)Age & Driving License
+#2)Age & Driving License
 age=int(input("Enter Your Age: "))
 if age>=18:
     license=input("Do you Have License? Yes/No:")
