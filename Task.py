@@ -98,7 +98,7 @@ else:
 #5) divisible by 5
 a=int(input("enter any number: "))
 if(a%2!=0):
-    print(a is divisible)
+    print("a is divisible")
 else:
     print("A is not divisible by 5")
 
