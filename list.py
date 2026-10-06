@@ -23,3 +23,30 @@ print(a[: : -1])
 #length of list
 list=[1,2,3,4,5]
 print(len(list))
+
+
+list1=[1,2,3]
+list2=[4,5,6]
+print(list1+list2)    #concatnation
+print(list1*4)        #Repetation
+
+l=[10,20,"Hi",3+5j]
+l=tuple
+print(l)
+
+
+#Tuple
+tup=(10,20,True,"Hi",30.5,3+5j)
+print(tup[2])
+print(tup[5])
+
+print(tup[1:4])   #end-1
+print(tup[0:5:2])
+
+
+#Addition of list elements
+list = [1,2,3,4]
+sum = 0
+for i in list:
+    sum = sum + i
+print(sum)
