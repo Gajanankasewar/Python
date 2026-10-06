@@ -68,3 +68,21 @@ print(number.count(30))
 number=[10,20,30,40,50]
 new_list=number
 print(new_list)
+
+##sum() method
+list=[10,20,30,40,50]
+print(sum(list))
+
+##min() method
+list=[40,20,100,5]
+print(min(list))
+
+##max() method
+l=[2,100,4,10]
+print(max(l))
+
+##sum,min,max
+l=[10,20,4,30,15]
+print(sum(l))
+print(min(l))
+print(max(l))
