@@ -52,3 +52,5 @@ print(tuple[5])
 
 print(tuple[1:4])   #end-1
 print(tuple[0:5:2])
+
+
