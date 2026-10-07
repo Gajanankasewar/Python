@@ -50,3 +50,61 @@ sum = 0
 for i in list:
     sum = sum + i
 print(sum)
+
+#Dictionary
+d={}
+print(type(d))
+
+##set
+s=set()                 #empty set
+print(type(s))     
+
+my_dict={1:10,2:55.5, 3:'x', 4:True, 5:[1,2,3], 6:"hi",7:10}
+print(my_dict)
+print(my_dict[1])
+print(my_dict[4])
+print(my_dict.keys())           #To access keys in dictionary
+print(my_dict.values())         #To access values in dictionary
+
+
+
+my_dict=dict({1:10, 2:55.5, 3:'x', 4:True, 5:[1,2,3], 6:"hi", 7:10})
+
+
+mydict={
+    "Id":101,
+    "name":"Merry",
+    "Age":19
+}
+i=mydict.items()
+print(i)
+print(mydict["Id"])
+
+
+mydict={
+    "Id":101,
+    "name":"Mery",
+    "Age":19
+}
+mydict.setdefault("City","Pune")
+print(mydict)
+
+mydict["City"]="mumbai"
+print(mydict)
+
+
+
+##set
+s={3,6,2,8,4,7,4,9,3}
+print(s)
+s.add(99)
+print(s)
+s.remove(4)
+print(s)
+
+##Update
+a={"lotus","rose","lily"}
+b={"Python","java","DSA"}
+a.update(b)
+print(a)
+
