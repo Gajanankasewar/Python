@@ -96,6 +96,13 @@ add()
 add()
 add()
 
+def sub():
+    c=int(input("Enter 1st Number: "))
+    d=int(input("Enter 2nd Number: "))
+    dif=c-d
+    print(dif)
+sub()
+
 ##Multiplication
 def mul():
     num1=int(input("Enter First Number: "))
@@ -105,6 +112,14 @@ def mul():
 mul()
 mul()
 
+
+def div():
+    e=int(input("enter 1st Number: "))
+    f=int(input("Enter 2nd Number: "))
+    division=e/f
+    print(division)
+div()
+div()
 
 
     
