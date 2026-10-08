@@ -26,7 +26,7 @@ for i in range(1,11):
     sum=sum+ i
 print(sum)
 
-even no.& thier sum
+#even no.& thier sum
 sum = 0
 for i in range(1, 11):
     if i % 2 == 0:
@@ -63,7 +63,7 @@ while(i>=1):
     print(i)
     i-=1
 
-3)Reverse The Number
+##3)Reverse The Number
 num=int(input("Enter any Number: "))
 rev=0
 while(num>0):
