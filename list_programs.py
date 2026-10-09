@@ -46,6 +46,7 @@ for i in s:
         smallest=i
 print(smallest)
 
+
 #smallest number without built-in funtion
 l=[10,40,6,23,45]
 smallest=l[0]
@@ -60,4 +61,4 @@ l=[10,12,17,22,27]
 difference=10
 for i in l:
     a= i-difference
-print(a)    
+print(a)
