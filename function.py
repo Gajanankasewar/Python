@@ -112,7 +112,7 @@ def mul():
 mul()
 mul()
 
-
+#division
 def div():
     e=int(input("enter 1st Number: "))
     f=int(input("Enter 2nd Number: "))
@@ -122,4 +122,3 @@ div()
 div()
 
 
-    
