@@ -292,16 +292,3 @@ print(odd)
 
 
 
-###TUPLE###
-#indexing
-colors=("red","green","blue")
-print(colors)
-print(type(colors))
-print(colors.index("green"))
-print(colors[1])
-
-#negative indexing
-subjects = ("Python", "Java", "C", "SQL")
-print(subjects[-1])
-#slicing
-print(subjects[1:3])
