@@ -133,3 +133,40 @@ def factorial(n):
 print("Factorial =", factorial(n))
 
 
+##Function Arguments
+#default argument
+def show(name,city="Pune"):
+    print("hello my name is",name,"and i am from",city)
+show("Gajanan")
+show("Gajanan","Nanded")
+
+
+##keyword argument
+def show(name,age,city):
+    print(name,age,city)
+show(name="gaju",age=23,city="pune")
+show("gaurav",23,"punee")
+
+
+#Required argument
+def student(name,age):
+    print(name,age)
+student("janni",24)
+student("Dhoni",32)
+
+
+#variable length Argument      '''multiple values can store'''
+def show(name,*value):
+    print(name,value)
+show("janni",10,20,30) 
+show("vihan",10,20,30,40,50)
+
+#addition program using variable length argument
+def show(*value):
+    sum=0
+    for i in value:
+        sum+=i
+    print(sum)
+show(10,20,30,40)
+show(10,20)
+show(10,20,30)
