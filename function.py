@@ -18,8 +18,8 @@ def add(a,b):       #parameter
 add(10,20)    
 add(100,200)      #arguments
 
-#pallindrome
 
+#pallindrome
 def para():
     num=int(input("Enter any Number: "))
     rev=0
@@ -133,6 +133,8 @@ def factorial(n):
 print("Factorial =", factorial(n))
 
 
+
+
 ##Function Arguments
 #default argument
 def show(name,city="Pune"):
@@ -170,3 +172,4 @@ def show(*value):
 show(10,20,30,40)
 show(10,20)
 show(10,20,30)
+
