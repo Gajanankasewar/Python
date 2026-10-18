@@ -1,75 +1,154 @@
 '''collection of character enclosed by single , dobule and triple quotes '''
 
-#double quotes
-str1="python"
+# #double quotes
+# str1="python"
 
-#single quotes
-str2='janni'
+# #single quotes
+# str2='janni'
 
-#Triple qutoes
-str3='''This is 
-myltiline 
-python string
-'''
+# #Triple qutoes
+# str3='''This is 
+# myltiline 
+# python string
+# '''
 
-print(str1)
-print(str2)
-print(str3)
-
-
-str4="Gajuu"
-print(str4[:4])
-
-#find the character by its index
-str="Hello World"
-print(str[1])
-print(str[4])
-print(str[7])
-print(str[10])
-print(str[2])
-
-print(str[-3])
-print(str[-4])
-print(str[-10])
-print(str[-5])
-print(str[-11])
+# print(str1)
+# print(str2)
+# print(str3)
 
 
-#slicing in string
+# str4="Gajuu"
+# print(str4[:4])
 
-str="Hello World"
-print(str[1:4])
-print(str[4:8])
-print(str[7:])
-print(str[3:7])
+# #find the character by its index
+# str="Hello World"
+# print(str[1])
+# print(str[4])
+# print(str[7])
+# print(str[10])
+# print(str[2])
 
-print(str[0:7:3])
-print(str[6:10:3])
-print(str[6: :4])
-print(str[4:10:5])
+# print(str[-3])
+# print(str[-4])
+# print(str[-10])
+# print(str[-5])
+# print(str[-11])
+
+
+# #slicing in string
+
+# str="Hello World"
+# print(str[1:4])
+# print(str[4:8])
+# print(str[7:])
+# print(str[3:7])
+
+# print(str[0:7:3])
+# print(str[6:10:3])
+# print(str[6: :4])
+# print(str[4:10:5])
 
 
 
-#capitalize ()
-str="hello world"
-str2=str.capitalize()
+# #capitalize ()
+# str="hello world"
+# str2=str.capitalize()
 
-#if we want every world first letter capital
-str2=str.title()
+# #if we want every world first letter capital
+# str2=str.title()
 
-print(str2)
-print(id(str))
-print(id(str2))
+# print(str2)
+# print(id(str))
+# print(id(str2))
 
-## isupper ##
-str="WELCOME"
-str2=str.isupper()
-str3=str.lower()
-print(str2)  #return value (true or false)
-print(str3)  #convert a string
+# ## isupper ##
+# str="WELCOME"
+# str2=str.isupper()
+# str3=str.lower()
+# print(str2)  #return value (true or false)
+# print(str3)  #convert a string
 
-# lower to upper case
-str3="gajanan"
-str4=str3.upper()
-print(str4)
+# # lower to upper case
+# str3="gajanan"
+# str4=str3.upper()
+# print(str4)
+
+# #capitalize
+# str="welcome"
+# str2=str.capitalize()
+# print(str2)
+
+# #islower()
+# str="welcome"
+# str2=str.islower()
+# print(str2)
+
+# #isupper()
+# str="WELCOME"
+# str2=str.isupper()
+# print(str2)
+
+# #len()
+# str="welcome"
+# print(len(str))
+
+#replace()
+# str1="java is a programming language"
+# str2=str1.replace("java","python")
+# print(str2)
+
+#join
+# str=""
+# list=['h','e','l','l','o']
+# str2=str.join(list)
+# print(str2)
+
+# #index
+# str="Welcome"
+# str2=str.index("c")
+# print(str2)
+
+#rfind   '''last wala same character find krto
+# str="communication"
+# str2=str.rfind("c")
+# print(str2)
+
+# #index
+# str="Welcome to the python"
+# str2=str.index("p",14,17)
+# print(str2)
+
+# #find   '''if character not found it gives -1'''
+# str="communcication"
+# str2=str.find("z")
+# print(str2)
+
+# #partition()
+# str="python is a programming language"
+# str2=str.partition("is")
+# print(str2)
+
+#split()
+# str="python is a programming language"
+# str2=str.split()
+# print(str2)
+
+#count              '''same element kiti vela aala te count krte
+# str="Hello welcome"
+# str2=str.count('e')
+# print("occurences",str2)
+
+# #count-r
+# txt="I love apples, aaple is my favorite fruit"
+# x=txt.count("are",10,24)
+# print(x)
+
+
+#Count  the number of vowels in given string
+s="programming"
+for ch in s:
+    if (ch=='a' or ch=='e' or ch='i' or ch='o' or ch='u'):
+        count+=1
+print(count)
+
 

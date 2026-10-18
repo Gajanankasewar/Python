@@ -91,11 +91,14 @@ print(leap(2012))
 print(leap(1900))
 print(leap(2000))
 
-#vowel or consonent
+#11)vowel or consonent
 vowel=lambda a:"vowels" if a in "aeiou" else "consonent"
 print(vowel('a'))
 
 
+#square
+num=lambda a:a*a 
+print(num)
 
 
 
