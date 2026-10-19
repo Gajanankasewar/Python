@@ -98,8 +98,22 @@ print(vowel('a'))
 
 #square
 num=lambda a:a*a 
-print(num)
+print(num(7))
 
+#fine out even number using filter function
+num=[1,2,4,5,6,7,8,9,10,11,12,13,14,15]
+result=list(filter(lambda a:a%2==0,num))
+print(result)
+
+#fine out odd number using filter function
+num=[1,2,3,4,5,6,7,8,9,10]
+result=list(filter(lambda a:a%2!=0,num))
+print(result)
+
+#another way
+num=[1,2,3,4,5,6,7,8,9,10]
+result=filter(lambda n:n%2==0,num)
+print(result)
 
 
 
