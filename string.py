@@ -152,4 +152,14 @@ for ch in s:
         count+=1
 print(count)
 
+#pallindrome using string 
+l="racecar"
+reverse=""
+for i in l:
+    reverse=i+reverse
+if reverse==l:
+    print("pallindrome")
+else:
+    print("not pallindrome")
+
 
