@@ -144,6 +144,7 @@ x=txt.count("are",10,24)
 print(x)
 
 
+
 #Count  the number of vowels in given string
 s="programming"
 count=0
@@ -162,4 +163,119 @@ if reverse==l:
 else:
     print("not pallindrome")
 
+
+##count using built in method
+# s="python is programming language"
+# print(s.count(" "))
+
+# st="programming language"
+# print(st.count("a"))
+
+
+
+
+
+##using programming logic
+#1)count white spaces
+s = "hello world python"
+count = 0
+for i in s:
+    if i == " ":
+        count += 1
+print(count)
+
+#2)find particular character
+q="programming language"
+count=0
+for i in q:
+    if i=="a":
+        count+=1
+print(count)
+
+
+#3)find vowels
+s="programming"
+for ch in s:
+    if ch=='a' or ch=='e' or ch=='o' or ch=='e' or ch=='u':
+        print(ch)
+
+
+#4)count vowels
+vowel="developer"
+count=0
+for ch in vowel:
+    if ch=='a' or ch=='e'or ch=='i'or ch=='o' or ch=='u':
+        count+=1
+print(count)
+
+#5)pallindrome using another method
+str1="mom"
+str2=str1[: :-1]
+if str1 == str2:
+    print(" string is pallindrome")
+else:
+    print("string is not pallindrome")
+
+
+
+#6)Reverse character
+str="python"
+reverse=""
+for ch in str:
+    reverse=ch+reverse
+print(reverse)
+
+#7)reverse word
+name="Hello How Are You"
+word=""
+result=""
+for ch in name:
+    result=word+" "+result
+print(result)
+
+#8)krishna
+word="krishna"
+count=0
+for ch in word:
+   count+=1
+   if count<len(word):
+      print(ch,"|",end="",sep="")
+   else:
+      print(ch)
+
+
+#9)character frequency
+word="programming"
+for ch in word:
+   count=0
+
+   for i in word:
+      if ch==i:
+         count+=1
+   print(ch,"=",count)
+
+#10)positive or negative indexing
+word = "python"
+for i in range(len(word)):
+    print(word[i], "Positive:", i, "Negative:", i - len(word))
+
+#11)lower to Upper case
+name="hello"
+for i in name:
+    new=chr(ord(i)-32)
+    print(new,end="")
+
+print("")
+
+#12)upper to lower case
+l="HELLO"
+for i in l:
+    print(chr(ord(i)+32),end="")
+
+#find out string's askey value
+string="python"
+for i in string:
+    print(ord(i))
+
+    
 
