@@ -272,9 +272,24 @@ l="HELLO"
 for i in l:
     print(chr(ord(i)+32),end="")
 
+#13)Anagram
+str1 = "listen"
+str2 = "silent"
+
+if len(str1) != len(str2):
+    print("Not Anagram")
+else:
+    for i in str1:
+        if str1.count(i) != str2.count(i):
+            print("Not Anagram")
+            break
+    else:
+        print("Anagram")
+
+
 #find out string's askey value
-string="python"
-for i in string:
+str10="python"
+for i in str10:
     print(ord(i))
 
     
