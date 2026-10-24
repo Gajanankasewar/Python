@@ -18,7 +18,7 @@ arr4=np.array([[[1,2],[3,4],[5,6]]])
 print(arr4)
 
 
-Check type of data
+#Check type of data
 import numpy as np
 arr1=np.array([1,2,3,4])
 arr=np.array([1.2,2.45,3.45,4.33])
@@ -26,7 +26,7 @@ print(arr1.dtype)
 print(arr.dtype)
 
 
-Comparison between Two numbers
+#Comparison between Two numbers
 import numpy as np 
 x = np.array([3, 5])
 y = np.array([2, 5]) 
