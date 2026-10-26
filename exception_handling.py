@@ -41,3 +41,63 @@ except ZeroDivisionError:
     print("zeroDivisionError")
 
 
+
+#custome exception
+class TooYoungException(Exception):
+    def __init__(self, arg):
+        self.msg = arg
+
+class TooOldException(Exception):
+    def __init__(self, arg):
+        self.msg = arg
+
+age = int(input("Enter Age: "))
+
+if age > 60:
+    raise TooOldException("Your age already crossed marriage age... no chance of getting married")
+
+elif age < 18:
+    raise TooYoungException("Please wait some more time. You will get the best match soon")
+
+else:
+    print("You are eligible for marriage")
+
+
+#Decorator
+def decor(func):
+    def inner(name):
+        if name=="Sunny":
+            print("Hello Sunny Bad Morning")
+        else:
+            func(name)
+    return inner
+
+
+@decor
+def wish(name):
+    print("Hello",name,"Good Morining")
+wish("Ravi")
+wish("Himanshu")
+wish("Sunny")
+
+
+#without using @ symbol decorator
+def decor(func):
+    def inner(name):
+        if name=="sunny":
+            print("HELLO sunny Bad Morining")
+        else:
+            func(name)
+    return inner
+def wish(name):
+    print("hello",name,"Good Morning")
+
+decorfunction=decor(wish)
+
+wish("Durva")
+wish("sunny")
+
+decorfunction("Durva")  #decorator wont be executed
+decorfunction("sunny")   #decorator will be executed
+
+
