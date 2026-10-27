@@ -68,3 +68,32 @@ print(a[0])
 #using Generator
 g=(x*x for x in range(100))
 print(next(g))
+
+
+#fibonacci program using while loop
+a=0
+b=1
+i=1
+num=int(input("Enter a Number: "))
+while i<=num:
+    print(a)
+    c=a+b
+    a=b
+    b=c
+    i+=1
+
+
+#using generator
+num=int(input("Enter a number"))
+def fibonacci(num):
+    a=0
+    b=1
+    i=1
+    while i<=num:
+        yield(a)
+        c=a+b
+        a=b
+        b=c
+        i+=1
+for i in fibonacci(num):
+    print(i)
