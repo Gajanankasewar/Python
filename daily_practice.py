@@ -215,3 +215,113 @@ print(b)
 
 print(numpy.sort(a[b]))
 
+
+
+
+
+
+#### Generator #####
+
+#print 1 to 5 using while
+def sequence():
+    i=1
+    while i<=5:
+        yield(i)
+        i+=1
+for i in sequence():
+    print(i)
+
+
+#print 1 to 5 by 
+def football():
+    i=1
+    while i<=5:
+        yield i
+        i+=1
+k=football()
+for i in k:
+    print(i)
+
+
+#print given yeild
+def counting():
+    yield 5
+    yield 10
+    yield 15
+
+k=counting()
+for i in k:
+    print(i)
+
+#Generate Even Numbers Using while Loop and yield
+def even_numbers():
+    i=2
+    while i<=10:
+        if i%2==0:
+            yield i
+        i+=1   
+            
+for i in even_numbers():
+    print(i)
+
+print("")
+
+#Generate Odd Numbers Using a Generator
+def odd_number():
+    i=1
+    while i<=9:
+        if i%2!=0:
+            yield i
+        i+=1
+k=odd_number()
+for i in k:
+    print(i)
+
+print("")
+
+
+#Generate Multiples of 5 Using a Generator
+def multiples():
+    i=5
+    while i<=25:
+        if i%5==0:
+            yield i
+        i+=1
+j=multiples()
+for i in j:
+    print(i)
+
+print("")
+
+
+#Generate Numbers in Reverse Order
+def reverse_count():
+    i=5
+    while i>=1:
+        yield i
+        i-=1
+p=reverse_count()
+for i in p:
+    print(i)
+
+print("")
+
+#Generate Squares of Numbers Using a Generator
+def squares():
+    i=1
+    while i<=5:
+        yield i*i
+        i+=1
+for i in squares():
+    print(i)
+
+print("")
+
+#Generate Cubes Using a Generator
+def cubes():
+    i=1
+    while i<=5:
+        yield i*i*i
+        i+=1
+for i in cubes():
+    print(i)
