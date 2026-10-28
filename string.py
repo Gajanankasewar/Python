@@ -217,7 +217,6 @@ else:
     print("string is not pallindrome")
 
 
-
 #6)Reverse character
 str="python"
 reverse=""
@@ -225,12 +224,23 @@ for ch in str:
     reverse=ch+reverse
 print(reverse)
 
+#or 
+# string="python"
+# for i in string:
+#     print(string[::-1])
+
 #7)reverse word
-name="Hello How Are You"
-word=""
-result=""
+name = "Hello How Are You"
+word = ""
+result = ""
+
 for ch in name:
-    result=word+" "+result
+    if ch != " ":
+        word = word+ch
+    else:
+        result = word+" " +result
+        word = ""
+result = word + " " + result
 print(result)
 
 #8)krishna
@@ -242,6 +252,14 @@ for ch in word:
       print(ch,"|",end="",sep="")
    else:
       print(ch)
+
+#OR
+#KRISHANA
+name="KRISHNA"
+for ch in range(len(name)):
+    print(name[ch],end="")
+    if ch<len(name)-1:
+        print("|",end="")
 
 
 #9)character frequency
@@ -285,6 +303,7 @@ else:
             break
     else:
         print("Anagram")
+
 
 
 #find out string's askey value
