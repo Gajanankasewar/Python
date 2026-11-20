@@ -542,28 +542,500 @@
 # print(s2.name,s2.marks)
 
 
-##task
-class Account:
-    def __init__(self,bal,acc):
-        self.balance=bal
-        self.account=acc
+# ##task
+# class Account:
+#     def __init__(self,bal,acc):
+#         self.balance=bal
+#         self.account=acc
 
-    def get_balance(self):
-        return self.balance
+#     def get_balance(self):
+#         return self.balance
 
-    def debit(self,amount):
-        self.balance-=amount
-        print("Rs",amount,"was debited")
-        print("Total balance= ",self.get_balance())
+#     def debit(self,amount):
+#         self.balance-=amount
+#         print("Rs",amount,"was debited")
+#         print("Total balance= ",self.get_balance())
 
-    def credit(self,amount):
-        self.balance+=amount
-        print("Rs",amount,"was credited")
-        print("total balance= ",self.get_balance())
+#     def credit(self,amount):
+#         self.balance+=amount
+#         print("Rs",amount,"was credited")
+#         print("total balance= ",self.get_balance())
 
     
 
-acc1=Account(10000, 12345)
-acc1.debit(1000)
-acc1.credit(500)
+# acc1=Account(10000, 12345)
+# acc1.debit(1000)
+# acc1.credit(500)
+
+# #polymorphism
+# class Dog:
+#     def sound():
+#         print("Dog barks")
+
+# class Cat:
+#     def sound():
+#         print("Cat meows")
+
+# d1=Dog
+# c1=Cat
+
+# d1.sound()
+# c1.sound()
+
+
+# class UPI:
+#     def __init__(self,amount):
+#         self.amount=amount
+
+#     def payment(self):
+#         print("payment by UPI: ",self.amount)
+
+# class Card:
+#     def __init__(self,amount):
+#         self.amount=amount
+
+#     def payment(self):
+#         print("Payment by Card: ",self.amount)
+
+# class Cash:
+#     def __init__(self,amount):
+#         self.amount=amount
+
+#     def payment(self):
+#         print("Payment by CAsh: ",self.amount)
+
+# p1=UPI(400)
+# p2=Card(200)
+# p3=Cash(500)
+
+# p1.payment()
+# p2.payment()
+# p3.payment()
+
+
+# #inheritance
+# class Parent():
+#     def house(self):
+#         print("parent house")
+
+# class Child(Parent):
+#     def bike(self):
+#         print("child bike")
+
+# c=Child()
+
+# c.house()
+# c.bike()
+
+
+# class Parent():
+#     def Display(self):
+#         print("Parent Class")
+
+# class Child(Parent):
+#     def show(self):
+#         print("child class")
+
+# c=Child()
+# c.Display()
+# c.show()
+
+
     
+# class Student:
+#     def __init__(self):
+#         print("Constructor called")
+
+# s1=Student()
+
+
+# class Student:
+#     def __init__(self):
+#         self.name = "janni"
+
+# s1 = Student()
+# print(s1.name)
+
+
+# class Student:
+#     def __init__(self,name,age,marks):
+#         self.name=name
+#         self.age=age
+#         self.marks=marks
+#     def display(self):
+#         print("Name of Student is: ",self.name)
+#         print("Student Age: ",self.age)
+#         print("Student Marks: ",self.marks)
+
+# s1=Student("janni",24,98)
+# s1.display()
+
+# #Employee Details
+# class Employee:
+#     def __init__(self,name,salary,department):
+#         self.name=name
+#         self.salary=salary
+#         self.department=department
+
+#     def show_details(self):
+#         print("Employee Name: ",self.name)
+#         print("Employee Salary: ",self.salary)
+#         print("Employee Department: ",self.department)
+
+# e=Employee("Amit",30000,"IT")
+# r=Employee("priya",40000,"Hr")
+# e.show_details()
+# print("")
+# r.show_details()
+
+
+# #Rectangle Area and Perimeter
+# class Rectangle():
+#     def __init__(self):
+#         self.length=10
+#         self.width=5
+
+#     def area(self):
+#         print("Area of Rectangle: ",self.length*self.width)
+
+#     def perimeter(self):
+#         print("Perimeter of Rectangle: ",2*(self.length+self.width))
+
+# a1=Rectangle()
+# a1.area()
+
+# a2=Rectangle()
+# a2.perimeter()
+
+
+# class Student:
+#     def __init__(self,name,age,marks):
+#         self.name=name
+#         self.age=age
+#         self.marks=marks
+
+#     def talk(self):
+#         print("student Name: ",self.name)
+#         print("student age: ",self.age)
+#         print("student marsk: ",self.marks)
+
+# s1=Student("pravin",23,88)
+# s2=Student("Arjun",23,76)
+# s3=Student("shiv",23,90)
+# s4=Student("gaurav",22,89)
+
+# Student=[s1,s2,s3,s4]
+# for i in Student:
+#     print("")
+#     i.talk()
+
+
+# class Student:
+#     def __init__(self,name,age,marks):
+#         self.name=name
+#         self.age=age
+#         self.marks=marks
+
+#     def talk(self):
+#         print("Student name: ",self.name)
+#         print("Student age: ",self.age)
+#         print("Student marks: ",self.marks)
+
+# for i in range(3):
+#     name=input("Enter Student Name: ")
+#     age=int(input("Enter Student age: "))
+#     marks=int(input("Enter Student Marks: "))
+
+# s1=Student(name,age,marks)
+# s1.talk()
+# print("")
+
+
+# #Employee details
+# class Employee:
+#     def __init__(self,name,age,salary):
+#         self.name=name
+#         self.age=age
+#         self.salary=salary
+
+#     def display(self):
+#         print("Student name: ",self.name)
+#         print("Student age: ",self.age)
+#         print("Student salary: ",self.salary)
+
+# s1=Employee("pravin",24,40000)
+# s1.display()
+
+# print("")
+
+# s2=Employee("Amit",28,30000)
+# s2.display()
+        
+# #banck account
+# class BankAccount:
+#     def __init__(self,account_holder,balance):
+#         self.account_holder=account_holder
+#         self.balance=balance
+
+#     def deposit(self,amount):
+#         self.balance=self.balance+amount
+#         print("Amount deposited: ",amount)
+
+#     def withdraw(self,amount):
+#         self.balance=self.balance - amount
+#         print("Withdraw amount: ",amount)
+
+#     def display(self):
+#         print("Current balance:",self.balance)
+
+
+# b=BankAccount("pravinkalale",1000)
+# b.deposit(500)
+# b.withdraw(200)
+# b.display()
+
+
+# #product details and discount
+# class Product:
+#     def __init__(self,product_name,price,quantity):
+#         self.product_name=product_name
+#         self.price=price
+#         self.quality=quantity
+
+#     def total_price(self):
+#         total=self.price*self.quality
+#         print("Total price: ",total)
+
+#     def discount(self):
+#         total=self.price*self.quality
+#         discount=total*10/100
+#         print("Discount: ",discount)
+#         return discount
+
+#     def final_price(self):
+#         total=self.price*self.quality
+#         discount=total*10/100
+#         final=total-discount
+#         print("Final Price: ",final)
+
+
+# s1=Product("Laptop",50000,3)
+# print("product Name: ",s1.product_name)
+# s1.total_price()
+# s1.discount()
+# s1.final_price()
+
+
+# class Mobile:
+#     def __init__(self):
+#         self.brand="Samsung"
+#         self.model="S24"
+#         self.price=75000
+
+#     def display_details(self):
+#         print("brand: ",self.brand)
+#         print("model: ",self.model)
+#         print("price: ",self.price)
+
+# d=Mobile()
+# d.display_details()
+
+
+
+# class Mobile:
+#     def __init__(self,brand,model,price):
+#         self.brand=brand
+#         self.model=model
+#         self.price=price
+
+#     def display_details(self):
+#         print("brand: ",self.brand)
+#         print("model: ",self.model)
+#         print("price: ",self.price)
+
+# d=Mobile("Samsung","S24",75000)
+# d.display_details()
+
+
+
+# ##Constructor parameterized
+# class Book:
+#     def __init__(self,book,author,price):
+#         self.book=book
+#         self.author=author
+#         self.price=price
+
+#     def display(self):
+#         print("Book Name: ",self.book)
+#         print("Author: ",self.author)
+#         print("price: ",self.price)
+
+# d=Book("Python Basics","janni",450)
+# d.display()
+# print("")
+# d1=Book("java programming","james",550)
+# d1.display()
+
+
+
+##### Inheritance Practice #####
+##Single Inheritance
+#one parent & one child
+class Parent:
+    def house(self):
+        print("Parent Have House")
+
+class Child(Parent):
+    def bike(self):
+        print("Child Have Bike")
+
+c=Child()
+c.house()
+c.bike()
+
+
+##Multiple Inheritance
+#Two parent & one Child
+
+class father:
+    def house(self):
+        print("Father Have House")
+
+class Mother(father):
+    def jwellary(self):
+        print("Mother Have jwellary")
+
+class child(Mother):
+    def bike(self):
+        print("child have Bike")
+
+f=child()
+f.house()
+f.jwellary()
+f.bike()
+
+
+##Multi-levle Inheritance
+#chain of inheritance
+class grandparent():
+    def farm(self):
+        print("Grandparent have farm")
+
+class parent(grandparent):
+    def house(self):
+        print("parent have House")
+
+class uncle(parent):
+    def car(self):
+        print("Uncle Have Car")
+
+class child(uncle):
+    def bike(self):
+        print("child have Lot's of Bikes")
+
+c1=child()
+c1.farm()
+c1.house()
+c1.car()
+c1.bike()
+
+print("")
+
+## Hierarchical Inheritance
+#One parent & Two Child
+class parent:
+    def house(self):
+        print("parent have house")
+
+class son(parent):
+    def bike(self):
+        print("son have bike")
+
+class daughter(parent):
+    def car(self):
+        print("Daughter have Car")
+
+
+s=son()
+s.house()
+s.bike()
+
+d=daughter()
+d.house()
+d.car()    
+
+print("")
+
+
+##Hybrid Inheritance
+#combine two or more type of inheritance
+class Parent:
+    def house(self):
+        print("parent have House")
+
+class Son(parent):
+    def bike(self):
+        print("Son have BMW bike")
+
+class Daughter(parent):
+    def car(self):
+        print("Daughter have car")
+
+class grandchild(Son, Daughter):
+    def mobile(self):
+        print("Grandchild have Mobiles")
+
+g=grandchild()
+g.house()
+g.bike()
+g.car()
+g.mobile()
+
+
+##Non-parameterized Constructor   
+class Student:
+    def __init__(self):
+        print("Constructor called")
+
+s=Student()
+
+
+
+#python program to define
+#abstract class
+from abc import ABC,abstractmethod
+class Car(ABC):
+    @abstractmethod
+    def speed(self):
+        pass
+
+class BMW(Car):
+    def speed(self):
+        print("BMW has 200 km/hr")
+
+class Audi(Car):
+    def speed(self):
+        print("Audi has 220km/hr")
+
+class Farrari(Car):
+    def speed(self):
+        print("Farrari has 250km/hr")
+
+t=BMW()
+t.BMW()
+
+a=Audi()
+a.Audi()
+
+f=Farrari()
+f.Farrari()
+
+
+
+
+    
+    
+    
+        
+
+
