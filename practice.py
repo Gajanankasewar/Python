@@ -2615,10 +2615,206 @@
 #     print(i)
 
 
-def generators():
-    for i in range(1,6):
-        yield i
+# def generators():
+#     for i in range(1,6):
+#         yield i
 
-r=generators()
-for k in r:
-    print(k)
+# r=generators()
+# for k in r:
+#     print(k) 
+
+
+###Abstract_class method
+# from abc import ABC,abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog Barks")
+
+# class Cat(Animal):
+#     def sound(self):
+#         print("Cat Meows")
+
+# d=Dog()
+# d.sound()
+
+# c=Cat()
+# c.sound()
+
+
+# #Abstract class method
+# from abc import ABC,abstractmethod
+
+# class Payment(ABC):
+#     @abstractmethod
+#     def pay(self,amount):
+#         pass
+
+# class UPI(Payment):
+#     def pay(self,amount):
+#         print("Paid using UPI",amount)
+
+# class CreditCard(Payment):
+#     def pay(self,amount):
+#         print("Paid using Credit Card: ",amount)
+
+# class NetBanking(Payment):
+#     def pay(self,amount):
+#         print("paid using netbanking",amount)
+
+# u=UPI()
+# u.pay(500)
+
+# c=CreditCard()
+# c.pay(1000)
+
+# N=NetBanking()
+# N.pay(2000)
+
+
+# from abc import ABC,abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog Barks")
+
+# d=Dog()
+# d.sound()
+
+
+###abstract method example
+from abc import ABC, abstractmethod
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+    def start(self):
+        print("Car Starts")
+
+class Bike(Vehicle):
+    def start(self):
+        print("Bike Start")
+
+c=Car()
+c.start()
+
+b=Bike()
+b.start()
+
+
+
+###### Numpy ######
+import numpy
+arr=numpy.array([1,2,3,4,5,6])
+print(arr)
+
+#2nd way
+import numpy as gk
+arr=gk.array([50,60,70,80])
+print(arr)
+
+#print double of numbers in list using numpy
+import numpy as np
+arr=np.array([10,20,30,40])
+result=arr*2
+print(result)
+
+
+#without numpy simple array list
+numbers=[21,32,43,54,65]
+result=[]
+for number in numbers:
+    result=number*2
+    print(result)
+
+
+#simple
+import numpy as np
+numbers=np.array([1,2,3,4,5])
+print(numbers)
+print(type(numbers))
+
+
+#create a numpy array
+import numpy as np
+arr=np.array([5,10,15,20,25])
+print(arr)
+print(type(arr))
+
+#create numpy arrays
+#1-D array
+import numpy as np
+arr=np.array([1,2,3,4,5])
+print(arr)
+
+#2-D array
+import numpy as np
+numbers=np.array([[1,2,3,4],
+                  [5,6,7,8]])
+
+print(numbers)
+
+#3-D array
+import numpy as np
+number=np.array([
+    [[1,2],
+     [3,4]],
+     [[5,6],
+      [7,8]]
+])
+print(number)
+print(number.ndim)
+
+
+#3-d array
+import numpy as np
+number=np.array([
+    [
+        [10,20],
+        [30,40]
+    ],
+    [
+        [50,60],
+        [70,80]
+    ]
+])
+
+print(number)
+print(number.ndim)
+
+#### 3-d array 
+import numpy as np
+arr=np.array([
+    [
+        [1,2,3],
+        [4,5,6]
+    ],
+    [
+        [7,8,9],
+        [10,11,12]
+    ]
+])
+
+print(arr)
+print(arr.ndim)
+
+
+##create array with 0 values
+#np.zeros()
+import numpy as np
+arr=np.zeros(6)
+print(arr)
+print(type(arr))
+print(arr.shape)
+print(arr.size)
+print(arr.dtype)
